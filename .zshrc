@@ -84,7 +84,6 @@ alias lt='eza --icons=auto --tree' # list folder as tree
 alias vim='nvim'
 alias c='clear'
 alias mclaunch='zsh ~/scripts/mcpelauncherbash.sh'
-alias fastfetch='c && fastfetch'
 alias hfetch='$(/home/based/scripts/hfetch.sh) >> /dev/null'
 
 # Directory navigation shortcuts

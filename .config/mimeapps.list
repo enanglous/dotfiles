@@ -2,6 +2,7 @@
 application/json=nvim.desktop;
 application/pdf=org.pwmt.zathura.desktop;
 application/x-zerosize=nvim.desktop;
+image/gif=mpv.desktop;imv-3.desktop;
 image/jpeg=imv-2.desktop;imv-dir;
 image/jpg=imv-dir;
 image/png=imv-dir;
@@ -23,6 +24,7 @@ application/json=nvim.desktop;
 application/lrf=calibre-lrfviewer.desktop
 application/pdf=org.pwmt.zathura.desktop;
 application/x-zerosize=nvim.desktop;
+image/gif=mpv.desktop;
 image/jpeg=imv-2.desktop;
 inode/directory=org.kde.dolphin.desktop
 message/rfc822=userapp-Thunderbird-WPP662.desktop
