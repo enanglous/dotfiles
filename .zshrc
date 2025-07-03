@@ -97,6 +97,8 @@ alias .5='cd ../../../../..'
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 alias mkdir='mkdir -p'
 
+# Add scripts to path
+export PATH=$PATH:$HOME/scripts/
 
 # Yazi
 function y() {
