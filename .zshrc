@@ -83,6 +83,7 @@ alias ld='eza -lhD --icons=auto' # long list dirs
 alias lt='eza --icons=auto --tree' # list folder as tree
 alias vim='nvim'
 alias c='clear'
+alias coppeliasim='QT_QPA_PLATFORM=xcb coppeliasim &'
 alias chyu='nvim ~/.config/hypr/userprefs.conf'
 alias mclaunch='zsh ~/scripts/mcpelauncherbash.sh'
 alias hfetch='$(/home/based/scripts/hfetch.sh) >> /dev/null'
