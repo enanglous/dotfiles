@@ -30,6 +30,11 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
+zinit light zdharma-continuum/fast-syntax-highlighting
+zinit load zdharma-continuum/history-search-multi-word
+zinit light zsh-users/zsh-history-substring-search
+zinit light hlissner/zsh-autopair
+zinit light djui/alias-tips
 
 # Add in snippets
 zinit snippet OMZL::git.zsh
@@ -86,7 +91,8 @@ alias c='clear'
 alias coppeliasim='QT_QPA_PLATFORM=xcb coppeliasim &'
 alias chyu='nvim ~/.config/hypr/userprefs.conf'
 alias mclaunch='zsh ~/scripts/mcpelauncherbash.sh'
-alias hfetch='$(/home/based/scripts/hfetch.sh) >> /dev/null'
+alias hfetch='$(hfetch.sh) >> /dev/null'
+alias ff='fastfetch.sh'
 
 # Directory navigation shortcuts
 alias ..='cd ..'
@@ -100,6 +106,7 @@ alias mkdir='mkdir -p'
 
 # Add scripts to path
 export PATH=$PATH:$HOME/scripts
+export MOD_HOST=/home/base/.config/mpd/socket
 
 # Yazi
 function y() {

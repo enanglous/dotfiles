@@ -27,12 +27,13 @@ return {
         "python",
         "lua",
         "markdown",
+        "ron",
       },
     },
   },
   {
     "bullets-vim/bullets.vim",
     ft = { "markdown", "text", "scratch", "gitcommit" },
-    opts = {},
+    config = function() end,
   },
 }

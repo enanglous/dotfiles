@@ -4,6 +4,7 @@ require "nvchad.options"
 
 local o = vim.o
 o.cursorlineopt = "both" -- to enable cursorline!
+vim.opt.relativenumber = true
 
 vim.api.nvim_create_autocmd({ "InsertLeave", "BufWritePost" }, {
   callback = function()
