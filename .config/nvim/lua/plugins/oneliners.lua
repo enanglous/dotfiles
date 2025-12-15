@@ -36,4 +36,15 @@ return {
     ft = { "markdown", "text", "scratch", "gitcommit" },
     config = function() end,
   },
+  {
+    "snacks.nvim",
+    opts = {
+      scroll = { enabled = true },
+    },
+  },
+  {
+    "mg979/vim-visual-multi",
+    lazy = false,
+    config = function() end,
+  },
 }

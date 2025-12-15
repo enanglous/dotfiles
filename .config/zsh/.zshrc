@@ -73,12 +73,6 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
-# Completion styling
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
-zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias l='eza -lh --icons=auto' # long list
@@ -93,6 +87,7 @@ alias chyu='nvim ~/.config/hypr/userprefs.conf'
 alias mclaunch='zsh ~/scripts/mcpelauncherbash.sh'
 alias hfetch='$(hfetch.sh) >> /dev/null'
 alias ff='fastfetch.sh'
+alias mcpe='zsh ~/scripts/mcpelauncherbash.sh'
 
 # Directory navigation shortcuts
 alias ..='cd ..'
@@ -105,8 +100,9 @@ alias .5='cd ../../../../..'
 alias mkdir='mkdir -p'
 
 # Add scripts to path
-export PATH=$PATH:$HOME/scripts
-export MOD_HOST=/home/base/.config/mpd/socket
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH=$PYENV_ROOT/shims:$PATH:$HOME/scripts
+export MPD_HOST=/home/base/.config/mpd/socket
 
 # Yazi
 function y() {
