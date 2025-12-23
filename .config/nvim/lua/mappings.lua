@@ -3,16 +3,12 @@ require "nvchad.mappings"
 -- add yours here
 
 local map = vim.keymap.set
-local unmap = vim.keymap.del
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
-unmap("n", "<leader>e")
-unmap("n", "<C-n>")
-map("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle nvimtree" })
 
-map("n", "<leader>mp", ":MarkdownPreview<CR>", { desc = "Preview Markdown" })
-map("n", "<leader>q", ":bd<CR>", { desc = "buffer delete" })
+map("n", "<leader>mp", ":MarkdownPreview<CR>", { desc = "Preview Markdown", silent = true })
+map("n", "<leader>q", ":bd<CR>", { desc = "buffer delete", silent = true })
 
 local harpoon = require "harpoon"
 harpoon:setup {}
