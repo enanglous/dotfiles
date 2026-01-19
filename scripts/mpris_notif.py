@@ -6,7 +6,7 @@ from gi.repository import Playerctl, GLib
 from subprocess import Popen
 import os
 
-player = Playerctl.Player()
+player = Playerctl.Player() 
 
 def on_track_change(player, e):
     # Get metadata
@@ -40,19 +40,6 @@ def on_track_change(player, e):
     if album_art_url and os.path.exists(album_art_url):
         cmd.extend(['-I', album_art_url])
     
-    # Add progress bar if duration is available (optional)
-    if metadata['mpris:length']:
-        length_ns = metadata['mpris:length']
-        # Convert nanoseconds to seconds
-        length_seconds = length_ns / 1e9
-        # Get current position if available
-        try:
-            position = player.get_position()
-            if position and length_seconds > 0:
-                progress = (position / length_seconds) * 100
-                cmd.extend(['-h', f'int:value:{progress:.0f}'])
-        except:
-            pass  # Skip progress bar if position not available
     
     # Send notification
     Popen(cmd)

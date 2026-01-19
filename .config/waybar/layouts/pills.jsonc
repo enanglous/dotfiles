@@ -12,44 +12,55 @@
         "$XDG_CONFIG_HOME/waybar/includes/includes.json" 
     ],
     "modules-left": [
-        "group/pill#left1"
+        "group/leaf#left1",
+        "group/pill-up#left2"
     ],
-    "group/pill#left1": {
+    "group/leaf#left1": {
         "modules": [
-            "hyprland/workspaces#kanji",
-            "hyprland/window"
+            "hyprland/workspaces"
+        ],
+        "orientation": "inherit"
+    },
+    "group/pill-up#left2": {
+        "modules": [
+            "custom/mediaplayer"
         ],
         "orientation": "inherit"
     },
     "modules-center": [
-        "group/pill#center"
+        "group/pill-down#center"
     ],
-    "group/pill#center": {
+    "group/pill-down#center": {
         "orientation": "inherit",
         "modules": [
-            "gamemode",
             "idle_inhibitor",
             "clock"
         ]
     },
     "modules-right": [
-        "group/pill#right1",
-        "group/pill#right2"
+        "group/pill-up#right0",
+        "group/pill-down#right1",
+        "group/pill-right#right2"
     ],
-    "group/pill#right1": {
+    "group/pill-up#right0": {
         "modules": [
-            "backlight",
-            "network",
-            "pulseaudio",
-            "pulseaudio#microphone",
-            "custom/updates"
+            "tray"
         ],
         "orientation": "inherit"
     },
-    "group/pill#right2": {
+    "group/pill-down#right1": {
+        "modules": [
+            "custom/hyprsunset",
+            "backlight",
+            "network",
+            "pulseaudio",
+            "pulseaudio#microphone"
+        ],
+        "orientation": "inherit"
+    },
+    "group/pill-right#right2": {
         "modules": [
             "privacy",
-            "tray",
             "battery"
         ],
         "orientation": "inherit"

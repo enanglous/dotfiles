@@ -1,0 +1,18 @@
+# username for that service
+user_name: enanglus
+
+# md5 hash of your password (obtained via `echo -n password | md5sum`)
+password_hash: 0bfd5112455f9c8ddcd63eef71f1d2cb
+
+# last.fm api, which can be created via https://www.last.fm/api/account/create
+api_key: fd845cd3227f6cf5f4d51182bd19d1ce
+api_secret: 237d2f24234b3eb197f1e6df0ec87ed1
+
+# the app's uri you want to scrobble
+# use `lastfm-mpris2-scrobbler --list-players` to check the uri name
+application_whitelist: [ "org.mpris.MediaPlayer2.mpd", "org.mpris.MediaPlayer2.brave.*" ]
+# by default, scrobbler will upload if the track has been played for 4 * 60 seconds or half the total length
+scrobble_time_threshold: 240
+
+# app's log level
+log_level: DEBUG
