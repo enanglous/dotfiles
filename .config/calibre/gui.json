@@ -118,50 +118,50 @@
   ],
   "geometry-of-calibre_main_window_geometry": {
     "frame_geometry": {
-      "height": 745,
-      "width": 1322,
+      "height": 1030,
+      "width": 1908,
       "x": 0,
       "y": 0
     },
     "full_screened": false,
     "geometry": {
-      "height": 745,
-      "width": 1322,
+      "height": 1030,
+      "width": 1908,
       "x": 0,
       "y": 0
     },
-    "maximized": false,
+    "maximized": true,
     "normal_geometry": {
-      "height": 745,
-      "width": 1322,
+      "height": 1030,
+      "width": 1908,
       "x": 0,
       "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAAAAAAAAAABSkAAALoAAAAAAAAAAAAAAUpAAAC6AAAAAAAAAAAByUAAAAAAAAAAAAABSkAAALo"
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAB3MAAAQFAAAAAAAAAAAAAAdzAAAEBQAAAAACAAAAB4AAAAAAAAAAAAAAB3MAAAQF"
     },
     "screen": {
       "depth": 32,
-      "device_pixel_ratio": 2.0,
+      "device_pixel_ratio": 1.0,
       "geometry_in_logical_pixels": {
-        "height": 1029,
-        "width": 1829,
+        "height": 1080,
+        "width": 1920,
         "x": 0,
         "y": 0
       },
       "index_in_screens_list": 0,
       "manufacturer": "BOE",
-      "model": "eDP-1-0x09AE",
+      "model": "0x09AE",
       "name": "eDP-1",
       "serial": "",
       "size_in_logical_pixels": {
-        "height": 1029,
-        "width": 1829
+        "height": 1080,
+        "width": 1920
       },
       "virtual_geometry": {
-        "height": 1029,
-        "width": 1829,
+        "height": 1080,
+        "width": 1920,
         "x": 0,
         "y": 0
       }
@@ -169,6 +169,7 @@
   },
   "grid view visible": false,
   "library_usage_stats": {
+    "/home/base/Documents/Library": 4,
     "/home/based/Calibre Library": 8
   },
   "main_window_central_widget_state": {

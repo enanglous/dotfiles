@@ -1,6 +1,13 @@
 {
   "add books dialog dir": "/home/based/Documents/Books",
   "add books dialog dir-last-used-filter-spec-all-files": false,
+  "choose calibre library": "/home/base/Documents/Library",
+  "notified-version-updates": {
+    "__class__": "set",
+    "__value__": [
+      "8.16"
+    ]
+  },
   "sort_history": [
     [
       "timestamp",

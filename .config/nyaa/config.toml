@@ -1,6 +1,6 @@
 theme = "Default"
 default_source = "Nyaa"
-download_client = "RunCommand"
+download_client = "qBittorrent"
 timeout = 30
 scroll_padding = 3
 cursor_padding = 4
@@ -10,6 +10,12 @@ hot_reload_config = true
 [client.command]
 cmd = 'curl "{torrent}" > ~/{file}'
 shell_cmd = "sh -c"
+
+[client.qBittorrent]
+base_url = "http://localhost:8080"
+username = "admin"
+password = "qbit123"
+password_file = "/path/to/password.txt"
 
 [source.nyaa]
 base_url = "https://nyaa.si/"
@@ -30,7 +36,7 @@ default_search = ""
 rss = false
 
 [source.torrentgalaxy]
-base_url = "https://torrentgalaxy.to/"
+base_url = "https://torrentio.strem.fun/"
 default_sort = "Date"
 default_sort_dir = "Desc"
 default_filter = "NoFilter"
