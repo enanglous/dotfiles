@@ -11,14 +11,6 @@ autocmd({ "InsertLeave", "BufWritePost" }, {
   end,
 })
 
-autocmd("VimEnter", {
-  command = ":silent !kitty @ --to=$KITTY_LISTEN_ON set-spacing padding=0 margin=0",
-})
-
-autocmd("VimLeavePre", {
-  command = ":silent !kitty @ --to=$KITTY_LISTEN_ON set-spacing padding=20 margin=10",
-})
-
 autocmd("BufReadPost", {
   pattern = "*",
   callback = function()

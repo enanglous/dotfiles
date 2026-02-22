@@ -13,6 +13,8 @@
   enable_mouse: true,
   status_update_interval_ms: 1000,
   select_current_song_on_change: false,
+  browser_song_sort: [Disc, Track, Artist, Title],
+  directories_sort: SortFormat(group_by_type: true, reverse: false),
   lyrics_dir: Some("~/Music/"),
   theme: Some("theme"),
   on_song_change: ["~/.config/rmpc/get_lyr.sh"],
