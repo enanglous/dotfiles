@@ -9,6 +9,10 @@ map("i", "jk", "<ESC>")
 
 map("n", "<leader>mp", ":MarkdownPreview<CR>", { desc = "Preview Markdown", silent = true })
 map("n", "<leader>q", ":bd<CR>", { desc = "buffer delete", silent = true })
+map("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>", { desc = "tmux window left", silent = true })
+map("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", { desc = "tmux window right", silent = true })
+map("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>", { desc = "tmux window down", silent = true })
+map("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", { desc = "tmux window up", silent = true })
 
 local harpoon = require "harpoon"
 harpoon:setup {}

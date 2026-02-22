@@ -1,0 +1,37 @@
+sw_volume: 45
+audio_device_state:1:pipewire
+audio_device_state:1:my_fifo
+state: pause
+current: 0
+time: 3.398
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0
+mixrampdelay: -1
+lastloadedplaylist: 
+playlist_begin
+0:Tracks/Joji/[2026] Piss In The Wind/PIXELATED KISSES - Joji.flac
+1:Tracks/Joji/[2026] Piss In The Wind/Cigarette - Joji.flac
+2:Tracks/Joji/[2026] Piss In The Wind/Last of a Dying Breed - Joji.flac
+3:Tracks/Joji/[2026] Piss In The Wind/LOVE YOU LESS - Joji.flac
+4:Tracks/Joji/[2026] Piss In The Wind/If It Only Gets Better - Joji.flac
+5:Tracks/Joji/[2026] Piss In The Wind/Love Me Better - Joji.flac
+6:Tracks/Joji, GIVĒON/[2026] Piss In The Wind/Piece of You (with Giveon) - Joji, GIVĒON.flac
+7:Tracks/Joji/[2026] Piss In The Wind/Hotel California - Joji.flac
+8:Tracks/Joji/[2026] Piss In The Wind/Tarmac - Joji.flac
+9:Tracks/Joji/[2026] Piss In The Wind/Forehead Touch the Ground - Joji.flac
+10:Tracks/Joji/[2026] Piss In The Wind/Past Won't Leave My Bed - Joji.flac
+11:Tracks/Joji, 4batz/[2026] Piss In The Wind/Fade to Black (with 4batz) - Joji, 4batz.flac
+12:Tracks/Joji/[2026] Piss In The Wind/CAN'T SEE SH T IN THE CLUB - Joji.flac
+13:Tracks/Joji/[2026] Piss In The Wind/Sojourn - Joji.flac
+14:Tracks/Joji/[2026] Piss In The Wind/DYKILY - Joji.flac
+15:Tracks/Joji, Yeat/[2026] Piss In The Wind/Rose Colored (with Yeat) - Joji, Yeat.flac
+16:Tracks/Joji/[2026] Piss In The Wind/Silhouette Man - Joji.flac
+17:Tracks/Joji, Don Toliver/[2026] Piss In The Wind/Fragments (with Don Toliver) - Joji, Don Toliver.flac
+18:Tracks/Joji/[2026] Piss In The Wind/Horses to Water - Joji.flac
+19:Tracks/Joji/[2026] Piss In The Wind/Strange Home - Joji.flac
+20:Tracks/Joji/[2026] Piss In The Wind/Dior - Joji.flac
+playlist_end
