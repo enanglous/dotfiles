@@ -3,5 +3,6 @@
 * {
   /* font-family: Monocraft Nerd Font Book; */
   /* font-weight: bold; */
+  min-height: 15px;
   font-size: 11px;
 }
