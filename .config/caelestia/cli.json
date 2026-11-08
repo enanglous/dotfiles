@@ -1,0 +1,13 @@
+{
+  "record": {
+    "extraArgs": [
+      "-q",
+      "high",
+      "-c",
+      "mp4"
+    ]
+  },
+  "theme": {
+    "postHook": "~/.local/bin/posthook.sh"
+  }
+}
