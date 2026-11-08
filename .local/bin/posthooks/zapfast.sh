@@ -15,6 +15,7 @@ fi
 
 mkdir -p "$THEME_DIR"
 tmp="$(mktemp "$THEME_DIR/.Wallpaper.XXXXXX")"
+chmod 644 "$tmp"
 trap 'rm -f "$tmp"' EXIT
 
 python3 -I - "$SCHEME" >"$tmp" <<'EOF'
