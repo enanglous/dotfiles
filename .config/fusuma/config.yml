@@ -1,0 +1,17 @@
+swipe:
+  4:
+    up:
+      command: "wpctl set-volume @DEFAULT_SINK@ 1%+"
+    down:
+      command: "wpctl set-volume @DEFAULT_SINK@ 1%-"
+
+hold:
+  4:
+    command: "playerctl -p playerctld play-pause"
+
+threshold:
+  swipe: 0
+  hold: 1
+
+interval:
+  swipe: 0.15

@@ -1,5 +1,5 @@
 theme = "Default"
-default_source = "Nyaa"
+default_source = "SukebeiNyaa"
 download_client = "qBittorrent"
 timeout = 30
 scroll_padding = 3

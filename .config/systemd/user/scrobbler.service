@@ -1,0 +1,9 @@
+[Unit]
+Description=Last.fm scrobbler via MPRIS2
+Documentation=https://github.com/Ladbaby/lastfm-scrobbler
+
+[Service]
+ExecStart=/home/base/.local/share/pipx/venvs/lastfm-mpris2-scrobbler/bin/lastfm-mpris2-scrobbler -c /home/base/.config/lastfm-mpris2-scrobbler/config.yaml
+
+[Install]
+WantedBy=default.target

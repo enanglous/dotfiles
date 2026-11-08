@@ -1,0 +1,8 @@
+{
+    "sizes": {
+        "bar": {
+            "innerWidth": 30,
+            "windowPreviewSize": 350
+        }
+    }
+}

@@ -1,0 +1,2 @@
+[binds]
+c = exec wl-copy --type image/png < "$imv_current_file"

@@ -1,0 +1,378 @@
+{
+    "appearance": {
+        "anim": {
+            "durations": {
+                "scale": 1.1
+            }
+        },
+        "padding": {
+            "scale": 0.8728312400714853
+        },
+        "rounding": {
+            "scale": 0.9009651295731708
+        },
+        "spacing": {
+            "scale": 0.5844674161585366
+        },
+        "transparency": {
+            "base": 0.705164817232376,
+            "enabled": true,
+            "layers": 0.08914001305483023
+        }
+    },
+    "background": {
+        "desktopClock": {
+            "background": {
+                "blur": true,
+                "enabled": true,
+                "opacity": 0.5
+            },
+            "enabled": true,
+            "invertColors": false,
+            "position": "top-right",
+            "scale": 0.5,
+            "shadow": {
+                "enabled": false,
+                "opacity": 0.4994349706266318
+            }
+        },
+        "visualiser": {
+            "autoHide": true,
+            "blur": false,
+            "enabled": false,
+            "rounding": 0.943191090078329,
+            "spacing": 1.2343240045691908
+        },
+        "wallpaperEnabled": true
+    },
+    "bar": {
+        "activeWindow": {
+            "compact": true,
+            "inverted": false,
+            "showOnHover": true
+        },
+        "clock": {
+            "background": false,
+            "showDate": false,
+            "showIcon": false
+        },
+        "dragThreshold": 20,
+        "persistent": true,
+        "popouts": {
+            "activeWindow": false,
+            "statusIcons": true
+        },
+        "scrollActions": {
+            "workspaces": true
+        },
+        "showOnHover": true,
+        "statusIcons": [
+            {
+                "enabled": true,
+                "id": "lockStatus"
+            },
+            {
+                "enabled": true,
+                "id": "audio"
+            },
+            {
+                "enabled": false,
+                "id": "microphone"
+            },
+            {
+                "enabled": false,
+                "id": "kbLayout"
+            },
+            {
+                "enabled": true,
+                "id": "network"
+            },
+            {
+                "enabled": true,
+                "id": "bluetooth"
+            },
+            {
+                "enabled": false,
+                "id": "peripheralBattery"
+            },
+            {
+                "enabled": true,
+                "id": "battery"
+            },
+            {
+                "enabled": true,
+                "id": "notifications"
+            }
+        ],
+        "tray": {
+            "background": false,
+            "compact": true,
+            "hiddenIcons": [
+            ],
+            "iconSubs": [
+            ],
+            "recolour": true
+        },
+        "workspaces": {
+            "activeIndicator": true,
+            "activeLabel": " 󰮯",
+            "activeTrail": false,
+            "capitalisation": "Preserve",
+            "label": " ",
+            "maxWindowIcons": 5,
+            "occupiedBg": false,
+            "occupiedLabel": " 󰮯",
+            "showWindows": false,
+            "showWindowsOnSpecialWorkspaces": true,
+            "shown": 5,
+            "specialWorkspaceIcons": [
+            ],
+            "windowIcons": [
+                {
+                    "flags": "",
+                    "icon": "sports_esports",
+                    "name": "",
+                    "regex": "steam(_app_(default|[0-9]+))?"
+                }
+            ]
+        }
+    },
+    "border": {
+        "rounding": 13,
+        "thickness": 4
+    },
+    "dashboard": {
+        "enabled": true,
+        "mediaUpdateInterval": 100,
+        "performance": {
+            "showGpu": false,
+            "showNetwork": true,
+            "showStorage": true
+        },
+        "resourceUpdateInterval": 1000,
+        "showOnHover": false,
+        "showWeather": true
+    },
+    "general": {
+        "apps": {
+            "audio": [
+                "pavucontrol"
+            ],
+            "explorer": [
+                "thunar"
+            ],
+            "playback": [
+                "mpv"
+            ],
+            "terminal": [
+                "kitty"
+            ]
+        },
+        "idle": {
+            "inhibitWhenAudio": true,
+            "lockBeforeSleep": true,
+            "timeouts": [
+                {
+                    "enabled": true,
+                    "idleAction": "lock",
+                    "inhibitWhenAudio": false,
+                    "inhibitWhenCharging": false,
+                    "respectInhibitors": true,
+                    "timeout": 180
+                },
+                {
+                    "enabled": true,
+                    "idleAction": "dpms off",
+                    "inhibitWhenAudio": false,
+                    "inhibitWhenCharging": false,
+                    "respectInhibitors": true,
+                    "timeout": 300
+                },
+                {
+                    "enabled": true,
+                    "idleAction": [
+                        "systemctl",
+                        "suspend"
+                    ],
+                    "inhibitWhenAudio": false,
+                    "inhibitWhenCharging": false,
+                    "respectInhibitors": true,
+                    "timeout": 600
+                }
+            ]
+        }
+    },
+    "launcher": {
+        "actionPrefix": "!",
+        "enableDangerousActions": true,
+        "favouriteApps": [
+        ],
+        "hiddenApps": [
+            "waydroid.com.mojang.minecraftpe",
+            "io.github.xiaoyouchr.GhostDownloader",
+            "wine-Programs-洲联电子-AULA S12PRO 有线鼠标"
+        ],
+        "useFuzzy": {
+            "actions": true,
+            "apps": true,
+            "schemes": true,
+            "variants": true,
+            "wallpapers": true
+        },
+        "vimKeybinds": true
+    },
+    "notifs": {
+        "defaultExpireTimeout": 3000,
+        "expire": true,
+        "openExpanded": false
+    },
+    "osd": {
+        "enabled": true
+    },
+    "paths": {
+        "lyricsDir": "/home/base/Music",
+        "mediaGif": "/home/base/Pictures/caelestia/AI_vibing.gif"
+    },
+    "services": {
+        "defaultPlayer": "Spotify",
+        "gpuType": "Generic",
+        "lyricsBackend": "Auto",
+        "smartScheme": true,
+        "visualiserBars": 80,
+        "weatherUnits": "Celsius"
+    },
+    "session": {
+        "commands": {
+            "logout": [
+                "sh",
+                "-c",
+                "hyprshutdown"
+            ]
+        }
+    },
+    "sidebar": {
+        "enabled": true
+    },
+    "utilities": {
+        "cards": {
+            "keepAwake": true,
+            "quickToggles": true,
+            "recorder": true
+        },
+        "enabled": true,
+        "quickToggles": [
+            {
+                "enabled": true,
+                "id": "wifi"
+            },
+            {
+                "enabled": true,
+                "id": "bluetooth"
+            },
+            {
+                "enabled": false,
+                "id": "quickshare"
+            },
+            {
+                "enabled": true,
+                "id": "mic"
+            },
+            {
+                "enabled": true,
+                "id": "settings"
+            },
+            {
+                "enabled": true,
+                "id": "gameMode"
+            },
+            {
+                "enabled": true,
+                "id": "dnd"
+            },
+            {
+                "enabled": true,
+                "id": "vpn"
+            },
+            {
+                "enabled": false,
+                "id": "wallpaper"
+            },
+            {
+                "enabled": false,
+                "id": "badapple"
+            },
+            {
+                "enabled": true,
+                "id": "pauseWallpaper"
+            },
+            {
+                "enabled": false,
+                "id": "pipPause"
+            }
+        ],
+        "toasts": {
+            "fullscreen": "all",
+            "nowPlaying": false
+        },
+        "vpn": {
+            "enabled": false,
+            "provider": [
+                {
+                    "connectCmd": [
+                        "nmcli",
+                        "connection",
+                        "up",
+                        "wgcf"
+                    ],
+                    "disconnectCmd": [
+                        "nmcli",
+                        "connection",
+                        "down",
+                        "wgcf"
+                    ],
+                    "displayName": "Cloudflare",
+                    "id": "vpn-msk2teht-4m1mr",
+                    "interface": "wgcf",
+                    "name": "Wireguard"
+                },
+                {
+                    "connectCmd": [
+                        "nmcli",
+                        "connection",
+                        "up",
+                        "wg0"
+                    ],
+                    "disconnectCmd": [
+                        "nmcli",
+                        "connection",
+                        "down",
+                        "wg0"
+                    ],
+                    "displayName": "Japan-1",
+                    "id": "vpn-msk48bug-3i9gs",
+                    "interface": "wg0",
+                    "name": "wireguard"
+                },
+                {
+                    "connectCmd": [
+                        "nmcli",
+                        "connection",
+                        "up",
+                        "wg1"
+                    ],
+                    "disconnectCmd": [
+                        "nmcli",
+                        "connection",
+                        "down",
+                        "wg1"
+                    ],
+                    "displayName": "Japan-2",
+                    "id": "vpn-msk4bgvm-2eyza",
+                    "interface": "wg1",
+                    "name": "wireguard"
+                }
+            ],
+            "selectedProvider": "vpn-msk2teht-4m1mr"
+        }
+    }
+}
