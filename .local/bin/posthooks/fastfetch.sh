@@ -109,5 +109,20 @@ EOF
 
 done
 
+# Caelestia logo, coloured like the shell's Logo.qml: primary on top, onSurface ring
+LOGO_SVG="$HOME/.local/bin/posthooks/fastfetch/caelestia.svg"
+SCHEME="$HOME/.local/state/caelestia/scheme.json"
+if [[ -f "$LOGO_SVG" && -f "$SCHEME" ]] && command -v rsvg-convert &>/dev/null; then
+	primary="$(jq -r '.colours.primary' "$SCHEME")"
+	on_surface="$(jq -r '.colours.onSurface' "$SCHEME")"
+	echo "Debug: Rendering caelestia logo (primary=#$primary, onSurface=#$on_surface)"
+	sed -e "s/#6ae5e1/#$primary/g" \
+		-e "s/#3b4656/#$on_surface/g" \
+		-e "s/#fff;/#$on_surface;/g" "$LOGO_SVG" |
+		rsvg-convert -w 512 -o "$OUTPUT_DIR/caelestia.png"
+else
+	echo "Skipping caelestia logo (missing $LOGO_SVG, $SCHEME or rsvg-convert)"
+fi
+
 rm -rf ~/.cache/fastfetch/images
 echo "Generated icons saved to: $OUTPUT_DIR"
