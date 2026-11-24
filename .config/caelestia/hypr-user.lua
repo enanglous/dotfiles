@@ -137,10 +137,13 @@ hl.bind(vars.mainMod .. "+ M", function()
 	hl.dispatch(hl.dsp.window.cycle_next())
 end)
 hl.bind(vars.mainMod .. " + SHIFT + N", function()
-	local focused = hl.dispatch(hl.dsp.focus({ window = "class:" .. vars.musicPlayer }))
-	if not focused then
-		hl.dispatch(hl.dsp.exec_cmd(vars.musicPlayer))
+	for _, win in ipairs(hl.get_windows() or {}) do
+		if win.class == "Spotify" then
+			hl.dispatch(hl.dsp.focus({ window = "class:Spotify" }))
+			return
+		end
 	end
+	hl.dispatch(hl.dsp.exec_cmd(vars.musicPlayer))
 end, { description = "Switch to Spotify or open it" })
 hl.bind(vars.mainMod .. "+ O", function()
 	hl.dispatch(hl.dsp.window.set_prop({ prop = "opaque", value = "toggle" }))
@@ -151,7 +154,6 @@ hl.bind(vars.mainMod .. "+ D", hl.dsp.exec_cmd(vars.discord))
 hl.bind(vars.mainMod .. "+ B", hl.dsp.exec_cmd(vars.browser))
 hl.bind(vars.mainMod .. "+ SHIFT + H", hl.dsp.exec_cmd("unset WAYLAND_DISPLAY; hydrus-client"))
 hl.bind("CTRL + ALT + H", hl.dsp.exec_cmd("~/.cargo/bin/animatux ~/Pictures/Malfoid\\ Animation.gif"))
-hl.bind(vars.mainMod .. "+ SHIFT + N", hl.dsp.exec_cmd(vars.musicPlayer))
 
 hl.bind("F10", hl.dsp.exec_cmd("playerctl --player=playerctld play-pause"))
 hl.bind("F12", hl.dsp.exec_cmd("playerctl --player=playerctld volume 0.05-"))
