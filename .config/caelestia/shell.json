@@ -1,13 +1,22 @@
 {
+    "ai": {
+        "activeProvider": "openrouter",
+        "enableCelestialMode": false,
+        "openRouterApiKey": "",
+        "openRouterModel": "openrouter/auto",
+        "openRouterUrl": "https://openrouter.ai/api/v1"
+    },
     "appearance": {
         "anim": {
             "durations": {
                 "scale": 1.1
             }
         },
+        "islands": false,
         "padding": {
             "scale": 0.8728312400714853
         },
+        "pitchBlack": false,
         "rounding": {
             "scale": 0.9009651295731708
         },
@@ -15,9 +24,15 @@
             "scale": 0.5844674161585366
         },
         "transparency": {
-            "base": 0.705164817232376,
-            "enabled": true,
+            "base": 0.721278098482376,
+            "enabled": false,
             "layers": 0.08914001305483023
+        }
+    },
+    "audio": {
+        "sounds": {
+            "notificationVolume": 0.08830777515900037,
+            "sfxVolume": 0.16263395581716567
         }
     },
     "background": {
@@ -29,21 +44,141 @@
             },
             "enabled": true,
             "invertColors": false,
+            "options": {
+                "constantlyRotate": false,
+                "dateStyle": "bubble",
+                "dialNumberStyle": "dots",
+                "hideWithWindows": false,
+                "hourHandStyle": "hollow",
+                "minuteHandStyle": "classic",
+                "secondHandStyle": "dot",
+                "shape": "Cookie12Sided",
+                "showDate": true,
+                "timeIndicators": true
+            },
             "position": "top-right",
-            "scale": 0.5,
+            "scale": 1.1204105753755365,
             "shadow": {
                 "enabled": false,
                 "opacity": 0.4994349706266318
-            }
+            },
+            "style": "cookie",
+            "surfaceStyle": "blur",
+            "x": 1607,
+            "y": 53
         },
+        "desktopLyrics": {
+            "enabled": false
+        },
+        "desktopWidgets": {
+            "blur": true,
+            "enabled": true,
+            "entries": [
+                {
+                    "col": -1,
+                    "enabled": false,
+                    "id": "weather",
+                    "options": {
+                    },
+                    "right": false,
+                    "row": -1,
+                    "sizeMode": "",
+                    "style": "",
+                    "type": "",
+                    "x": 1636,
+                    "y": 475
+                },
+                {
+                    "col": -1,
+                    "enabled": false,
+                    "id": "pomodoro",
+                    "options": {
+                    },
+                    "right": false,
+                    "row": -1,
+                    "sizeMode": "",
+                    "style": "",
+                    "type": "",
+                    "x": 1363,
+                    "y": 84
+                },
+                {
+                    "col": -1,
+                    "enabled": false,
+                    "id": "calendar",
+                    "options": {
+                        "outerShape": "ClamShell"
+                    },
+                    "right": false,
+                    "row": -1,
+                    "sizeMode": "1x2",
+                    "style": "",
+                    "type": "",
+                    "x": 1306,
+                    "y": 376
+                },
+                {
+                    "col": -1,
+                    "enabled": false,
+                    "id": "resources",
+                    "options": {
+                    },
+                    "right": false,
+                    "row": -1,
+                    "sizeMode": "",
+                    "style": "",
+                    "type": "",
+                    "x": -1,
+                    "y": -1
+                },
+                {
+                    "col": -1,
+                    "enabled": true,
+                    "id": "media",
+                    "options": {
+                        "showVisualizer": false
+                    },
+                    "right": false,
+                    "row": -1,
+                    "sizeMode": "1x2",
+                    "style": "",
+                    "type": "",
+                    "x": 1525,
+                    "y": 841
+                },
+                {
+                    "col": -1,
+                    "enabled": false,
+                    "id": "battery",
+                    "options": {
+                    },
+                    "right": false,
+                    "row": -1,
+                    "sizeMode": "",
+                    "style": "",
+                    "type": "",
+                    "x": 1575,
+                    "y": 830
+                }
+            ],
+            "hideWithWindows": true,
+            "surfaceStyle": "blur"
+        },
+        "videoWallpaperPaused": false,
         "visualiser": {
             "autoHide": true,
             "blur": false,
             "enabled": false,
+            "options": {
+                "waveCrest": 0.8611636513157894,
+                "waveFill": 0.3801729543585526
+            },
             "rounding": 0.943191090078329,
-            "spacing": 1.2343240045691908
+            "spacing": 1.2343240045691908,
+            "style": "wave"
         },
-        "wallpaperEnabled": true
+        "wallpaperEnabled": true,
+        "wallpaperRecolor": true
     },
     "bar": {
         "activeWindow": {
@@ -62,6 +197,7 @@
             "activeWindow": false,
             "statusIcons": true
         },
+        "position": "left",
         "scrollActions": {
             "workspaces": true
         },
@@ -142,6 +278,7 @@
         "thickness": 4
     },
     "dashboard": {
+        "dragThreshold": 100,
         "enabled": true,
         "mediaUpdateInterval": 100,
         "performance": {
@@ -149,9 +286,50 @@
             "showNetwork": true,
             "showStorage": true
         },
+        "randomizeMediaShapeColors": false,
+        "replaceMediaLyricsWithVisuals": false,
         "resourceUpdateInterval": 1000,
+        "showHyprlandSplash": true,
         "showOnHover": false,
-        "showWeather": true
+        "showWeather": true,
+        "syncMediaShapesToBeat": false,
+        "tabs": [
+            {
+                "enabled": true,
+                "id": "focus"
+            },
+            {
+                "enabled": true,
+                "id": "notes"
+            },
+            {
+                "enabled": true,
+                "id": "dashboard"
+            },
+            {
+                "enabled": true,
+                "id": "media"
+            },
+            {
+                "enabled": true,
+                "id": "weather"
+            },
+            {
+                "enabled": true,
+                "id": "performance"
+            },
+            {
+                "enabled": false,
+                "id": "terminal"
+            }
+        ],
+        "useMediaShapes": false
+    },
+    "focus": {
+        "dailyGoalMins": 90,
+        "focusMins": 25,
+        "shortBreakMins": 5,
+        "streakThresholdMins": 30
     },
     "general": {
         "apps": {
@@ -200,7 +378,8 @@
                     "timeout": 600
                 }
             ]
-        }
+        },
+        "logo": "distro"
     },
     "launcher": {
         "actionPrefix": "!",
@@ -221,6 +400,18 @@
         },
         "vimKeybinds": true
     },
+    "notch": {
+        "alwaysCompact": true,
+        "artistFirst": true,
+        "compactWithWindows": true,
+        "expandMode": "click",
+        "maxTitleWidth": 280,
+        "showArtist": false,
+        "showClock": false,
+        "showMusic": false,
+        "showOnEmptyWorkspace": true,
+        "showWithWindows": true
+    },
     "notifs": {
         "defaultExpireTimeout": 3000,
         "expire": true,
@@ -237,8 +428,9 @@
         "defaultPlayer": "Spotify",
         "gpuType": "Generic",
         "lyricsBackend": "Auto",
+        "pipFollowFocus": true,
         "smartScheme": true,
-        "visualiserBars": 80,
+        "visualiserBars": 60,
         "weatherUnits": "Celsius"
     },
     "session": {
@@ -249,6 +441,9 @@
                 "hyprshutdown"
             ]
         }
+    },
+    "shimeji": {
+        "scale": 0.756481291118421
     },
     "sidebar": {
         "enabled": true
@@ -279,11 +474,11 @@
             },
             {
                 "enabled": true,
-                "id": "settings"
+                "id": "gameMode"
             },
             {
                 "enabled": true,
-                "id": "gameMode"
+                "id": "settings"
             },
             {
                 "enabled": true,
@@ -294,7 +489,7 @@
                 "id": "vpn"
             },
             {
-                "enabled": false,
+                "enabled": true,
                 "id": "wallpaper"
             },
             {
@@ -312,7 +507,8 @@
         ],
         "toasts": {
             "fullscreen": "all",
-            "nowPlaying": false
+            "nowPlaying": false,
+            "transparency": false
         },
         "vpn": {
             "enabled": false,

@@ -9,6 +9,7 @@
   },
   "theme": {
     "postHook": "~/.local/bin/posthook.sh",
-    "enableChromium": false
+    "enableChromium": false,
+    "enableSpicetify": true
   }
 }

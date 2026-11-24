@@ -150,14 +150,14 @@ hl.bind(vars.mainMod .. "+ O", function()
 end)
 
 -- PROGRAMS --
-hl.bind(vars.mainMod .. "+ D", hl.dsp.exec_cmd(vars.discord))
+hl.bind(vars.mainMod .. " + D", hl.dsp.exec_cmd(vars.discord), { description = "Open Discord" })
 hl.bind(vars.mainMod .. "+ B", hl.dsp.exec_cmd(vars.browser))
 hl.bind(vars.mainMod .. "+ SHIFT + H", hl.dsp.exec_cmd("unset WAYLAND_DISPLAY; hydrus-client"))
-hl.bind("CTRL + ALT + H", hl.dsp.exec_cmd("~/.cargo/bin/animatux ~/Pictures/Malfoid\\ Animation.gif"))
+hl.bind("CTRL + ALT + H", hl.dsp.exec_cmd("~/scripts/hfetch.sh &"))
 
 hl.bind("F10", hl.dsp.exec_cmd("playerctl --player=playerctld play-pause"))
-hl.bind("F12", hl.dsp.exec_cmd("playerctl --player=playerctld volume 0.05-"))
-hl.bind("F11", hl.dsp.exec_cmd("playerctl --player=playerctld volume 0.05+"))
+hl.bind("F11", hl.dsp.exec_cmd("playerctl --player=playerctld volume 0.05-"))
+hl.bind("F12", hl.dsp.exec_cmd("playerctl --player=playerctld volume 0.05+"))
 
 for i = 1, 10 do
 	local key = i % 10

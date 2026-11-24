@@ -3,7 +3,7 @@ return {
 	browser = "zen-browser",
 	terminal = "foot",
 	fileManager = "thunar",
-	musicPlayer = "spotifast",
+	musicPlayer = "spicetify watch -s",
 	editor = "nvim",
 
 	mainMod = "SUPER",
